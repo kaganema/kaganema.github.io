@@ -1,2 +1,5 @@
 # kaganema.github.io
-Portfolio and web content.
+Main page to project locations
+
+Portfolio: 
+Latest: 
