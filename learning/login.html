@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<title>User Login</title>
+<link rel="stylesheet" href="text.css">
+<link rel="stylesheet" href="forms.css">
+</head>
+<body>
+<header>
+<h2>Login to post and comment</h2>
+<a href="guidepage.html">Return</a>
+</header>
+<form action="user-login.php">
+<div class="imgcontainer">
+<img src="headlogo.png" alt="Avatar" class="avatar">
+</div>
+<div class="container">
+<label for="uname"><b>Username</b></label>
+<input type="text" placeholder="Your Username" name="uname" required>
+<br>
+<label for="pw"><b>Password</b></label>
+<input type="password" placeholder="Password" name="pw" required>
+
+<br>
+<button type="submit">Login</button>
+<label>
+<input type="checkbox" checked="checked" name="remember">Remember Me
+</label>
+</div>
+
+<div class="container" style="background-color:#0c0c0c">
+  <button type="button" class="cancelbtn">Cancel</button><br>
+  <span class="psw">Forgot <a href="#">password?</a></span>
+</div>
+<div class="container">
+<p>New User?<a href="register.html">Create new account</a></p>
+</div>
+</form>
+</body>
+</html>

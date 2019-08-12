@@ -1,0 +1,90 @@
+body {
+	background-color: #8A8A8A;
+	color: #FFFFFF;
+	font-size: 20px;
+	font-family: "Segoe UI", Verdana
+}
+
+nav {
+	width: 100%;
+	height: 2rem;
+	text-align: center;
+	background-color: #4F4F4F;
+	text-decoration: none;
+}
+
+.drop-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+a {
+	text-decoration: none;
+	color: #8ED12E;
+}
+
+a:hover{
+	color: #E4C807;
+	text-decoration: none;
+}
+
+header {
+	left: 20px;
+	padding-left: 20px;
+	line-height: 21px;
+	margin-bottom: 40px;
+}
+
+.content-page {
+	border: 1px solid green;
+	display: inline-flex;
+	padding: 10px 8px;
+	margin: 5px;
+	align-content: center;
+}
+
+.content-box {
+	padding: 0 2px;
+	border: 3px solid #8ED12E;
+	margin: 5px;
+	background-color: #4F4F4F;
+}
+
+.formbox {
+	float: right;
+	top: -100px;
+}
+
+.content-screen {
+	text-align: center;
+}
+
+.txcontainer {
+	text-align: center;
+}
+
+.txcontainer p {
+	justify-content: left;
+}
+
+input {
+	border: 2px solid #E4C807;
+	border-radius: 8px;
+	background-color: #4F4F4F;
+	color: #E4C807;
+}
+
+textarea {
+	border: 2px solid #E4C807;
+	border-radius: 8px;
+	background-color: #4F4F4F;
+	color: #E4C807;
+}
+
+.comment {
+	float: center;
+}
