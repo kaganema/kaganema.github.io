@@ -1,0 +1,66 @@
+form {
+	border: 3px solid #f1f1f1;
+	width: 50%;
+}
+
+/*Full-width inputs*/
+input[type=text], input[type=password], input[type=email] {
+	width: 50%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #E4C807;
+	color: #E4C807;
+}
+
+/*For all login buttons*/
+button { 
+	background-color: #8ED12E;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 50%;
+}
+
+button:hover{
+	opacity: 0.8;
+	background-color: #E4C807;
+	color: white;
+}
+
+.cancelbtn {
+	background-color: #f44336;
+}
+
+.cancelbtn:hover {
+	background-color: #f1f1f1;
+	color: #0c0c0c;
+}
+
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+}
+
+img.avatar {
+	width: 40%;
+	border-radius: 50%;
+}
+
+span.psw {
+	float: right;
+	padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
