@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Content Sharing Platform</title>
+<link rel="stylesheet" href="port.css">
+</head>
+<body>
+<header class="project-header">
+<ul class="bread">
+<li><a href="eandex.html">Home</a></li>
+<li><a href="#">Web</a></li>
+<li>VISPLAN</li>
+</ul>
+<h1>Project Title</h1>
+<h3>Caption of the game.</h3>
+</header>
+
+<div class="tabvert"><!--Games, Graphics, Models/Assets, Mini Software, Web/Net, RD, Music(bonus)-->
+<button class="tablink" onclick="openPanel(event, 'About')" id="defaultOpen">About</button>
+<button class="tablink" onclick="openPanel(event, 'Tools')">Tools</button>
+<button class="tablink" onclick="openPanel(event, 'Gallery')">Gallery</button>
+<button class="tablink" onclick="openPanel(event, 'Development')">Development Log</button>
+<button class="tablink" onclick="openPanel(event, 'Thought')">Conclusion</button>
+<button class="tablink" onclick="openPanel(event, 'Distribution')">Download</button>
+</div>
+<!--Project description-->
+<div id="About" class="tabcontent vert">
+<div class="text-container">
+<p>I wanted an alternative to Youtube that will allow professionals, creators, and sometimes entertainers to demonstrate 
+their work to the audience that could be potential employer or collaborator. It's a collective way of writing 
+portfolios.</p>
+<p>Usually, these will be in the form of videos but I wanted to add an audio and game library showcase to the mix due to 
+the nature of the site.</p>
+<button type="button" class="collapsed" >
+The Site
+</button>
+<div class="hiddentext">
+<p>"VP", the unofficial name of the site based on the initials of the final version, is a site that allows users to 
+upload their works and life experiences. People can show how it was done, they can write a portfolio. It's a platform 
+for multiple professions. Wether it's for tech skills, artistic expressions, ideas for debate, or pure entertainment... 
+It's a simple place for all the showcases, classified into relevant sections to avoid conflicts with word searches.
+If the user wants to keep it on their drive, download is available.</p>
+</div>
+<button type="button" class="collapsed">
+Users
+</button>
+<div class="hiddentext">
+<p>Users range from video editors, musicians, sound engineers, game developers, and/or tutors.</p>
+<p>In addition to videos and live or archived streams, users can also upload music as audio tracks to the site, for 
+use as part of other videos or promoting the release of the artists' albums. A price can also be set for downloadables.</p>
+<p>Game developers may also want a simple place to have full control of their promotion, so why not provide a library for 
+indie and mid-level companies to promote their product and provide information.</p>
+<p>Each member has control over their content. Whether they use predefined templates or code the structure entirely 
+with their own code, users can set up their portfolio in any way they like. In addition, they can program what they want 
+filtered with the Node library.</p>
+<p>A user can host multiple channels and present themselves as something different from another, providing all 
+these channels a variation of personalities and presentations. Want to make videos but have a separate music channel 
+display solely the works? You can do that here.</p>
+</div>
+<button type="button" class="collapsed">
+Projects
+</button>
+<button type="button" class="collapsed">
+Teamwork
+</button>
+<button type="button" class="collapsed">
+Community
+</button>
+</div>
+</div>
+<div id="Tools" class="tabcontent vert">
+<div class="text-container">
+<p>Tools used.</p>
+<ul>
+<li>HTML: Design, Layout</li>
+<li>CSS: Styles, colouring, backdrop.</li>
+<li>Javascript: Events, dynamic pages</li>
+<li>jQuery: Events, user modifications</li>
+<li>HTML5 Boilerplate: Default custom templates for coders' edit</li>
+<li>Node JS: Servers, users, and dynamic pages, file uploads.</li>
+<li>PostgreSQL: User ID, content management</li>
+<li>Mongo: User details / images.</li>
+<li>Flask: Security, databases.</li>
+<li>Vue JS: UI, file loads.
+<li>Three JS: Interactive games on display.</li>
+<li>C/C++: Sockets, streaming modifications.</li>
+<li>QT: Offline App.</li>
+</ul>
+</div>
+</div>
+<div id="Gallery" class="tabcontent vert">
+<div class="gallery">
+	<div class="ibox">
+		<img alt="Screenshot: trends">
+	</div>
+	<div class="ibox">
+		<img alt="Screenshot: audio library">
+	</div>
+	<div class="ibox">
+		<img alt="Screenshot: search results">
+	</div>
+	<div class="ibox">
+		<img alt="Screenshot: game library">
+	</div>
+	<div class="ibox">
+		<img alt="Screenshot: live and reports">
+	</div>
+	<div class="ibox">
+		<img alt="Screenshot: searchbar in action">
+	</div>
+	<div class="ibox">
+		<img alt="Screenshot: production">
+	</div>
+	<div class="ibox">
+		<img alt="Screenshot: profiles">
+	</div>
+	<div class="ibox">
+		<img alt="Screenshot: user portfolio">
+	</div>
+	<div class="ibox">
+		<img alt="Screenshot: channel dashboard">
+	</div>
+	<div class="ibox">
+		<img alt="Screenshot: desktop application">
+	</div>
+</div>
+</div>
+<div id="Development" class="tabcontent vert">
+<div>
+<h3>The web building</h3>
+<p>The first part was to set up the page to make a prototype visible to the viewer. The process took a while especially 
+with discovering a new library based on flexbox. The structure has been fixed but the style has still got a few cracks in 
+the area. Eventually got what I wanted in order. </p>
+<h3>Events</h3>
+<p>Now it came to navigation events.</p>
+<h3>Server Programming</h3>
+<p>The server environment was added to generate dymanic pages with templates.</p>
+</div>
+</div>
+<div id="Distribution" class="tabcontent vert">
+<p>You can visit the site by clicking <a href="#">here!</a></p>
+<p>Or you can download the app and manage things offline!</p>
+</div>
+<br>
+<!--Videos-->
+<div class="view">
+<video width="350" height="290" controls></video>
+<video width="350" height="290" controls>
+	<source type="video/mp4" src="..\projects\videos\web-viewers-layout-pt1.mp4">
+</video>
+</div>
+<!--Display-->
+<div class="icanvas">
+</div>
+<!--Report-->
+<div class="pro-details">
+<p></p>
+<a></a>
+</div>
+<!--Downloads/links to full page-->
+<div class="site">
+<a href="#">Link to the site.</a>
+</div>
+<script src="user.js"></script>
+</body>
+</html>

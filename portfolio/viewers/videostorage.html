@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Video Site - Description</title>
+<link rel="stylesheet" href="port.css">
+</head>
+<body>
+<header class="project-header">
+<ul class="bread">
+<li><a href="eandex.html">Home</a></li>
+<li><a href="#">Web</a></li>
+<li>Videos</li>
+</ul>
+<h1>Project Title</h1>
+<h3>Caption of the game.</h3>
+</header>
+
+<div class="tabvert"><!--Games, Graphics, Models/Assets, Mini Software, Web/Net, RD, Music(bonus)-->
+<button class="tablink" onclick="openPanel(event, 'About')" id="defaultOpen">About</button>
+<button class="tablink" onclick="openPanel(event, 'Tools')">Tools</button>
+<button class="tablink" onclick="openPanel(event, 'Gallery')">Gallery</button>
+<button class="tablink" onclick="openPanel(event, 'Development')">Development Log</button>
+<button class="tablink" onclick="openPanel(event, 'Thought')">Conclusion</button>
+<button class="tablink" onclick="openPanel(event, 'Distribution')">Download</button>
+</div>
+<!--Project description-->
+<div id="About" class="tabcontent vert">
+<div class="text-container">
+<p>I decided to set up a simple website dedicated to my recordings in regards to logs, self-reference tutorials, 
+and stream archives. The place stores videos and documents for reading more tips. There includes bundled playlists 
+and project workings. I created this as a means of sharing my content and allowing for discussions for viewers if they
+felt the need. The design result turned out to quite impressive to my knowledge. More on about page.</p>
+</div>
+</div>
+<div id="Tools" class="tabcontent vert">
+<div class="text-container">
+<p>Tools used.</p>
+<ul>
+<li>HTML: Design, Layout</li>
+<li>CSS: Styles, colouring, backdrop.</li>
+<li>Javascript: Events, dynamic pages</li>
+<li>jQuery: Events</li>
+<li>Wamp: Server testing, database creation.</li>
+<li>Three JS: Interactive games on display.</li>
+</ul>
+</div>
+</div>
+<div id="Gallery" class="tabcontent vert">
+<div class="gallery">
+	<div class="ibox">
+		<img src="gallery/videos-mainpage.png"  alt="Screenshot: main page">
+	</div>
+	<div class="ibox">
+		<img src="gallery/vido-screen.png" alt="Screenshot: single video">
+	</div>
+	<div class="ibox">
+		<img src="gallery/categories.jpg" alt="Categories">
+	</div>
+	<div class="ibox">
+		<img src="gallery/mailto.png" alt="Categories">
+	</div>
+</div>
+</div>
+<div id="Development" class="tabcontent vert">
+<div>
+<p>The initialisation went well. The categorisation had a bit of trouble. I had referenced the W3C pages to 
+look at the structuring and styling. Created a few blank instances of the blocks to visualise how it would 
+end up at upon publishing data. I decided to sort the order from latest first. I wanted to make a dark setting 
+much like the modelling software and the shooter genre of themes. Overall, the structuring of the site, including 
+the video on a single page, has been a quick 5 hours in total.</p>
+<p>The 'Content' Tab was meant to have a dropdown menu listing all the genres on the page. It was held back with a 
+replacement page until I came to the solution in W3C.</p>
+<p>The only things remained in the site was the login, video loading on a seaparate page, and the search results.</p> 
+<p>The login had taken longer in setting up. The form took a while to fix, but then the log in was more tedious with 
+Javascript involved.</p>
+</div>
+</div>
+<div id="Distribution" class="tabcontent vert">
+<p>You can visit the site by visiting <a href="#">here!</a></p>
+</div>
+<br>
+<!--Videos-->
+<div class="view">
+</div>
+<!--Display-->
+<div class="icanvas">
+</div>
+<!--Report-->
+<div class="pro-details">
+<p></p>
+<a></a>
+</div>
+<!--Downloads/links to full page-->
+<div class="site">
+<a href="#">Link to the site.</a>
+</div>
+<script src="user.js"></script>
+</body>
+</html>
