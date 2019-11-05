@@ -1,0 +1,19 @@
+#lins {
+	content: left;
+}
+
+#gma {
+	list-style: none;
+}
+
+a {
+	font-family: Verdana;
+}
+
+a:hover {
+	color: #ffffff;
+}
+
+form.email {
+	font-family: Verdana;
+}

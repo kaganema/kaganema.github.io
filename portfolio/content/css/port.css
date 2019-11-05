@@ -34,6 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffcc00;
 }
 
 .Bar{
@@ -45,8 +46,13 @@ p{
 }
 
 a{
-  color: rgb(25, 100, 200);
+  /*color: rgb(25, 100, 200);*/
+  color: #9999ff;
   text-decoration: none;
+}
+
+a:hover {
+	color: #ffff1a;
 }
 
 ul{
@@ -54,6 +60,8 @@ ul{
   /*background: #a5a9ac;*/
   background: rgba(122, 124, 126, 0.4);
   backface-visibility: hidden;
+  font-family: sans-serif;
+  color: #ffcc00;
 }
 
 ul.bread {
@@ -295,7 +303,7 @@ header.card{
   border-left: none;
   overflow: auto;
   color: #000;
-  background-color: #e6e6e6;
+  background-color: #000ccc;
 }
 
 .tabcontent h1, h2, h3, h4 {
