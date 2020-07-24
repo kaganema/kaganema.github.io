@@ -1,0 +1,180 @@
+* {
+	align-content: center;
+}
+
+body {
+	background-image: linear-gradient(-30deg, #1a1a1a, #000033);
+}
+
+header {
+	padding: 0.1rem;
+	margin: 0 2rem auto auto;
+	width: 100%;
+}
+
+nav {
+	margin: 0 auto;
+	padding: 5px;
+}
+
+header h1 {
+	text-align: center;
+	left: -10px;
+	margin: 4rem auto;
+	font-size: 50px;
+	font-weight: 700;
+	color: #ffffff;
+	text-shadow: 1px 1px 3px gray; 
+}
+
+#head-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	word-spacing: 7px;
+	background-color: red;
+	height: 4rem;
+	background-image: linear-gradient(90deg, #ff9900, #ff6600, #ff3300, #ff6600, #ff9900);
+}
+
+#head-nav a {
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.navbar {
+	word-spacing: 2px;
+	height: 1rem;
+}
+
+ .tabs {
+	justify-content: start;
+	color: #ffffff;
+} 
+
+.tabs a {
+	/* margin: auto 0.6rem;
+	padding: 0.5rem; */
+	border: 1px solid black;
+	text-align: justify;
+	border-radius: 10px 10px 0 0; 
+}
+
+.link {
+	margin: inherit;
+	border-bottom: 1.2rem;
+	padding: 0.5rem;
+	text-align: justify;
+	border-radius: 10px 10px 0 0; 
+	cursor: pointer;
+}
+
+.link:active {
+	background-color: #151515;
+}
+
+.link:hover {
+	background-color: #585858;
+}
+
+.link.is-active {
+	background-color: #151515;
+}
+
+.image {
+	padding: 1rem;
+	margin: auto;
+}
+
+#intro {
+	color: #ffffff;
+}
+
+#switch {
+	background-color: #262626;
+	border-radius: 15px 15px 5px 5px;
+}
+
+section {
+	margin: 1rem auto;
+	padding: 5rem;
+}
+
+.tab {
+	display: none;
+	background-color: red;
+	border: 2px inset black;
+	border-radius: 10px;
+}
+
+.tab h2{
+	font-size: 25px;
+	font-weight: bold;
+	padding: 1rem;
+	color: #000000;
+	text-shadow: -1px -1px 1px #fff, 1px -1px 1px #fff, -1px 1px 1px #fff, 1px 1px 1px #fff;
+}
+
+.tab p {
+	padding: 1.1rem;
+	margin: auto;
+	color: #ffffff;
+}
+
+#winos {
+	background-image: linear-gradient(#000033 0%, #1a1aff 100%);
+}
+
+#winsec {
+	background-image: linear-gradient(to bottom right, #1a1aff 0%, #ff3300 100%);
+}
+
+#websites {
+	background-image: linear-gradient(to top left, #990099 0%, #ff3300 100%);
+}
+
+#logos {
+	background-image: radial-gradient(#00cc00, #ffff1a, #ff3300);
+}
+
+#buildpc {
+	background-image: radial-gradient(#ff3300, #1a1aff, #000000);
+}
+
+#warranties {
+	background-image: linear-gradient(to bottom left, #0066ff 0%, #ff0000 100%);
+}
+
+#cases {
+	font-size: 20px;
+	background-image: linear-gradient(to bottom left, #0066ff 43%, #ff0066 100%);
+}
+
+#contact {
+	background-image: linear-gradient(to bottom left, #ff0000, #ff3300, #ff6600);
+}
+
+#contact h2 {
+	font-size: 30px;
+	left: -2px;
+}
+
+#confirm {
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.tab.is-active {
+	display: block;
+}
+
+footer {
+	margin: 1rem auto;
+	padding: 2rem;
+	text-align: center;
+	background-color: #262626;
+	color: #ffffff;
+}

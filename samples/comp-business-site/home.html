@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Diagnovice</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+		<link rel="stylesheet" href="design.css">
+	</head>
+	<body class="hero ">
+		<header>
+			<nav id="head-nav">
+				<a href="#intro">About</a>
+				<a href="#features">Services</a>
+				<a href="#warranties">Guarantees</a>
+				<a href="#">Personal</a>
+				<a href="#cases">Reviews</a>
+				<a href="#contact">Contact</a>
+			</nav>
+			<h1>Welcome to Your Personal Service!</h1>
+		</header>
+		<main >
+		<section id="intro" class="read">
+			<h2>Flexible service needs for your machine.</h2>
+			<p>You can get anything sorted for you. Diagnosis, designs, layouts, security all with flexible hours for your needs. You have a one-man, or one-men, services across the country. Check out more. </p>
+		</section>
+		<section id="features" class="read scroll">
+			<div id="switch" class="is-centered">
+			<ul class="tabs">
+				<li class="link is-active" rel="winos">Windows Diagnostics (OS, Boot, Settings, Configs)</li>
+				<li class="link" rel="winsec">Windows Security</li>
+				<li class="link" rel="websites">Custom Websites</li>
+				<li rel="logos" class="link">Logo Design</li>
+				<li rel="buildpc" class="link">Custom PC</li>
+			</ul>
+			</div>
+			<article id="winos" class="tab is-active">
+			<div class="columns">
+				<div class="column">
+				<h2>Windows 10 Diagnostics</h2>
+				<p>This service can help fix your pc. Configure your updates, manage schedules, create and optimise drives - all available for use.</p>
+				</div>
+				<div class="column">
+				<div class="image is-4by3">
+					<img src="assets/winos1.jpg">
+				</div>
+				</div>
+			</div>
+			</article>
+			<article id="winsec" class="tab">
+			<div class="columns">
+			<div class="column">
+				<h2>Windows 10 Security</h2>
+				<p>We can check for vulnerabilities for your computer. Clear up any unwanted data, configure your antivirus.</p>
+			</div>
+			<div class="column">
+				<div class="image is-4by3">
+					<img src="assets/winsec1.jpg">
+				</div>
+			</div>
+			</div>
+			</article>
+			<article id="logos" class="tab">
+				<h2>Flash Art</h2>
+				<p>Want some designs sorted. We got you covered!</p>
+			</article>
+			<article id="websites" class="tab">
+				<h2>Custom Websites with a CMS of your choice!</h2>
+				<p>Do you need a website? Want to sort your content? Need some extra interactivity, or custom products? No problem.</p>
+				<p>Tells which one you need, we'll make changes.</p>
+			</article>
+			<article id="buildpc" class="tab">
+				<h2>Get a PC made!</h2>
+				<p>We can offer custom PC builds to get you started. You pick your parts, tell us what you need built and we do the job. Our schedules are flexible so you can negotiate the times.</p> 
+			</article>
+		</section>
+		<section id="warranties" class="read">
+			<nav></nav>
+			<div class="columns">
+			<div class="column">
+			<div class="image is-128x128">
+			</div>
+			</div>
+			<div class="line">
+			</div>
+			<div class="column">
+				<h2>Cheap!</h2>
+			</div>
+			</div>
+		</section>
+		<section id="cases">
+			<article class="customer">
+			<p style="font-style:italic; font-weight:600">"This was a good experience. Cheap and flexible to my needs 
+			that helped me sort my house out while my machine was away."</p>
+			<p>-Customer 1, Sheffield</p>
+			</article>
+			<br>
+			<article class="customer">
+			<p style="font-style:italic; font-weight:600">"I hired this service for two cases for my company, security scan and logo design. Both turned out amazing for my starting condition."</p>
+			<p>-A company</p>
+			</article> 
+		</section>
+		<section id="contact" class="read columns">
+		<div class="column">
+			<h2>Enquire and ask us for a service!</h2>
+		</div>
+		<div class="column">
+			<form id="enq-message" method="Post" class="send">
+				<label for="email">Send as: </label>
+				<input id="email" class="input" type="email" placeholder="example@email.com" required>
+				<br>
+				<label for="enquiry">What would you like?</label><br>
+				<textarea id="enquiry" class="input" rows="100" cols="70" placeholder="Enter your details">
+				</textarea>
+				<br>
+				<p id="message"></p>
+				<input id="confirm" type="submit" class="button" value="Post request">
+			</form>
+		</div>
+		</section>
+		</main>
+		<footer>
+		<p>&copy;2020 Kaganema</p>
+		</footer>
+		<!--Make it more confidential. Definite use this library.-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+		<!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+		<script src="script.js"></script>
+	</body>
+</html>
