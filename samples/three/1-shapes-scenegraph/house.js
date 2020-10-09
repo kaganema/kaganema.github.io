@@ -1,3 +1,9 @@
+/**
+* File created by Emir Atik (kaganema) on 09/10/20
+* Version 1.0
+* Here you can see some of earlier ideas have been commented out.
+*/
+
 var scene = new THREE.Scene();
 // width, height;
 var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.3, 10000);
@@ -16,6 +22,7 @@ var floor = new THREE.Mesh(plane, mat);
 // Adding walls
 //var walls = [];
 var walls = new THREE.Group();
+
 // Used for additional side windows.
 //var wins = new THREE.Group();
 
