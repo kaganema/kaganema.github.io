@@ -25,38 +25,39 @@ ul {
 </div>
 <h1>You can find more of my content here.</h1>
 <div class="content">
-<div id="lins">
-<h3>Back to <a href="">Github</a></h3>
-<a href="https://www.linkedin.com/in/emir-atik-22a84816b/">LinkedIn</a>
-<a href="https://emaprofiles.wordpress.com">Wordpress</a>
-<a href="#">Teams</a>
-<a href="#">Slack</a>
-</div>
-<div id="gma">
-<ul>
-<li><a href="https://www.codecademy.com/profiles/EkA107">Codecademy</a></li>
-<li><a href="https://www.sololearn.com/Profile/14953533">Sololearn</a></li>
-<li><a href="https://www.hackerrank.com/kgemir_atik">Hackerrank</a></li>
-<li><a href="#">Codingames (future)</a></li>
-</div>
-<div id="addr">
-<a href="#">kgemir.atik@outlook.com</a>
-<form class="email" method="POST">
-<label>Send as: </label>
-<input type="email" name="messenger"><br>
-<label>Query type: </label>
-<option>
-<select>Hiring</select>
-<select>I want more information</select>
-<select>I want to help</select>
-<select>Other</select>
-</option>
-<textarea cols="33" rows="10" placeholder="some long text">
+    <div id="lins">
+        <h3>Back to <a href="">Github</a></h3>
+        <a href="https://www.linkedin.com/in/emir-atik-22a84816b/">LinkedIn</a>
+        <a href="https://emaprofiles.wordpress.com">Wordpress</a>
+        <a href="#">Teams</a>
+        <a href="#">Slack</a>
+    </div>
+    <div id="gma">
+        <ul>
+            <li><a href="https://www.codecademy.com/profiles/EkA107">Codecademy</a></li>
+            <li><a href="https://www.sololearn.com/Profile/14953533">Sololearn</a></li>
+            <li><a href="https://www.hackerrank.com/kgemir_atik">Hackerrank</a></li>
+            <li><a href="#">Codingames (future)</a></li>
+        </ul>
+    </div>
+    <div id="addr">
+        <a href="#">kgemir.atik@outlook.com</a>
+        <form class="email" method="POST">
+            <label for="address">Send as: </label>
+            <input type="email" name="messenger"><br>
+            <label for="query-types">Query type: </label>
+            <select id="enquires">
+                <option value="hiring">Hiring</option>
+                <option value="info">I want more information</option>
+                <option value="collab">I want to help</option>
+                <option value="misc">Other</option>
+            </select>
+            <textarea cols="33" rows="10" placeholder="Write here">
 </textarea>
-<br>
-<input type="submit" name="submit">
-</form>
-</div>
+            <br>
+            <input type="submit" name="submit">
+        </form>
+    </div>
 </div>
 </body>
 </html>
