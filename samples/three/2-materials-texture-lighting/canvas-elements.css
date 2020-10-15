@@ -1,0 +1,8 @@
+p {
+    z-index: 50;
+    margin: auto;
+    font-family: "Comic Sans MS", "Trebuchet MS", sans-serif;
+    position: absolute;
+    color: #00b300;
+    display: block;
+}
