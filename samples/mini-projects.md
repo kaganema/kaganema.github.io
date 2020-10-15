@@ -14,3 +14,6 @@ Games
 Graphics
 <br>
 [THREE.js: Primitive Objects & Scene Graph](three/1-shapes-scenegraph/page.html)
+<br>
+[THREE.js: Familiarising Textures, Materials, & Lighting](three/2-materials-texture-lighting/index.html)
+<br>
