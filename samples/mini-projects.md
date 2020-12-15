@@ -1,6 +1,6 @@
 Smaller Samples
 
-Web Environment
+## Web Environment
 <br>
 <a href="comp-business-site/home.html">Fake Job Website (using jQuery & Bulma)</a>
 
@@ -11,7 +11,8 @@ Desktop Apps
 
 Games
 
-Graphics
+## Graphics
+[WebGL Practice](Webgl.md)
 <br>
 [THREE.js: Primitive Objects & Scene Graph](three/1-shapes-scenegraph/page.html)
 <br>
