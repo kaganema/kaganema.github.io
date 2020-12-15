@@ -1,6 +1,7 @@
 var scene = new THREE.Scene();
-var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+//var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 var renderer = new THREE.WebGLRenderer();
+var camera = new THREE.PerspectiveCamera(75, renderer.domElement.width / renderer.domElement.height, 0.1, 1000);
 
 if ( WEBGL.isWebGL2Available() === false ) {
 
@@ -8,7 +9,7 @@ if ( WEBGL.isWebGL2Available() === false ) {
 
 }
 
-renderer.setSize(window.innerWidth, window.innerHeight);
+//renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 //Change camera controls
@@ -202,6 +203,7 @@ spire.position.z = -3.4;
 
 // ADD STORAGE BOX
 
+
 // Create spotlight, ADJUST SPREAD AND SCALE
 var spot = new THREE.SpotLight(0xF2F5A9, 1.5);
 spot.position.y = 5.27;
@@ -209,7 +211,24 @@ spot.angle = 0.8;
 spot.penumbra = 0.33;
 scene.add(spot);
 
+// Resize the canvas
+function resize(ren) {
+    const cren = ren.domElement;
+    const pixelRatio = window.devicePixelRatio;
+    const resize = cren.width !== cren.clientWidth || cren.height !== cren.clientHeight;
+    if(resize){
+        ren.setSize(cren.clientWidth, cren.clientHeight, false);
+        //ren.setPixelRatio(window.devicePixelRatio);
+    }
+    return resize;
+}
+
 function animate() {
+    if(resize(renderer)){
+        const ren = renderer.domElement;
+        camera.aspect = ren.clientWidth / ren.clientHeight;
+        camera.updateProjectionMatrix();
+    }
     requestAnimationFrame(animate);
     control.update();
     renderer.render(scene, camera);
