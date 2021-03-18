@@ -7,5 +7,6 @@ by kaganema
 3. [Texture mapping on Different Faces - Single Cube](three/3-texture-mapping-and-arrays/view.html) | 
 [Texture mapping on Different Faces - Applied to Array](three/3-texture-mapping-and-arrays/index.html) | 
 [Modified Mobile Version](three/3a-responsive-basic/view.html)
+4. [Simple Shadow map world](three/4-shadow-map-directional/scene.html)
 <br>
 <br>
