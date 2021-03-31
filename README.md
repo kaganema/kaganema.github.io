@@ -2,6 +2,7 @@
 Main page to project locations
 <a href="portfolio/viewers/index.html">Portfolio:</a> <br>
 [Samples](samples/mini-projects.md)  
+[Current update section](upload-blog.md)
 [You can also check the latest logs of in work or completed projects here](project-browse.md)
 <br>
 <a href="videos.html">Videos </a><br>
