@@ -8,6 +8,6 @@ by kaganema
 [Texture mapping on Different Faces - Applied to Array](three/3-texture-mapping-and-arrays/index.html) | 
 [Modified Mobile Version](three/3a-responsive-basic/view.html)
 4. [Simple Shadow map world](three/4-shadow-map-directional/scene.html)
-5. [A File Loading Scene](three/5-file-loader-scene-(obj))
+5. [A File Loading Scene](three/5-file-loader-scene-(obj)/world.html)
 <br>
 <br>
