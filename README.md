@@ -1,6 +1,6 @@
 # kaganema.github.io
 Main page to project locations
-[CV Highlights] <br>
+[CV Highlights](portfolio/cv/cv-base.html) <br>
 <a href="portfolio/viewers/index.html">Portfolio:</a> <br>
 [Samples](samples/mini-projects.md)  <br>
 [Current update section](upload-blog.md) <br>
