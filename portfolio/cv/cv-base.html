@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>My CV Page</title>
+	<meta name="author" content="Emir Atik (kaganema@github)">
+	<meta name="description" content="Points to highlight on my CV.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <link rel="stylesheet" href="styles/port.css">
+</head>
+
+<body>
+	<header>
+        <h1>Emir Atik</h1>
+        <h4><a href="mailto:kgemir.atik@outlook.com">kgemir.atik@outlook.com</a></h4>
+    </header>
+	<main class="tabs">
+        <div class="tab">
+        <!-- Tab buttons -->
+        <button class="tablink" onclick="openPanel(event, 'Profile')" id="defaultOpen">Profile</button>
+        <button class="tablink" onclick="openPanel(event, 'Skills')">Skills</button>
+        <button class="tablink" onclick="openPanel(event, 'Education')">Education</button>
+        <button class="tablink" onclick="openPanel(event, 'XtTraining')">Training</button>
+        <button class="tablink" onclick="openPanel(event, 'Projects')">Projects</button>
+        <button class="tablink" onclick="openPanel(event, 'Contact')">Details</button>
+        </div>
+<!--        <hr>-->
+        <!-- Tab content section -->
+        <div id="Profile" class="tabcontent">
+            <h4>Summary</h4>
+            <p>Computer Graphics, Vision, and Games graduate from Aberystwyth University who has since continued to learn and expand the skillset. Well organized, creative and a strong problem solver with outstanding organisational, analytical and decision-making skills. Excellent planning skills in setting and achieving goals, including meeting tight deadlines. Always thinking of something to do and how to apply them. Cooperative and helpful team participant, with ability to think and work well independently. Systematic, logical thinker, able to compartmentalise program aspects and build integrative systems. Has expanded interest in varying industries.</p>
+            <div >
+                <h4>Personal Traits</h4>
+                <ul class="topics">
+                    <li>Problem solver</li>
+                    <li>Creative ideas</li>
+                    <li>Effective communicaiton</li>
+                    <li>Fast and strong learner</li>
+                    <li>Attention to detail</li>
+                    <li>Overall Completionist</li>
+                </ul>
+            </div>
+        </div>
+        <div id="Skills" class="tabcontent">
+            <ul class="skillset">
+                <h4>Programming</h4>
+                <ul class="topics">
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                </ul>
+            </ul>
+            <ul class="skillset">
+                <h5>Games</h5>
+                <ul class="skillset">
+                    <li>Unity, Unreal</li>
+                    <li>LibGDX</li>
+                    <li>Collisions, Controls</li>
+                    <li>Particles</li>
+                    <li>Top-Down Shooter, Arcade</li>
+                </ul>
+            </ul>
+            <ul class="skillset">
+                <h5>Software</h5>
+                <ul class="skillset">
+                    <li>Implementation, Testing, Version Control</li>
+                    <li>Waterfall, Kanban</li>
+                    <li>JavaFX, Tkinter</li>
+                    <li>JUnit</li>
+                    <li>Gradle, Gulp.js</li>
+                </ul>
+            </ul>
+            <ul class="skillset">
+                <h5>Web</h5>
+                <ul class="topics">
+                    <li>Client-Side:</li>
+                    <ul class="topics">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>DOM</li>
+                        <li>Bootstrap, Bulma</li>
+                        <li>jQuery</li>
+                    </ul>
+                    <li>Server-Side</li>
+                    <ul class="topics">
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>Pug/Jade</li>
+                    </ul>
+                    <li>Databases</li>
+                    <ul class="topics">
+                        <li>PostgreSQL</li>
+                        <li>MySQL</li>
+                        <li>Oracle</li>
+                        <li>MongoDB</li>
+                    </ul>
+                    <li>WEBGL</li>
+                    <ul class="topics">
+                        <li>Three.JS</li>
+                    </ul>
+                </ul>
+            </ul>
+            <ul class="skillset">
+                <h5>VCS</h5>
+                <ul class="topics">
+                    <li>SVN</li>
+                    <li>Git</li>
+                    <li>Perforce</li>
+                </ul>
+            </ul>
+        </div>
+        <div id="Education" class="tabcontent">
+            <h3>Aberystwyth University</h3>
+            <h3>(2014-2018)</h3>
+            <h2>BSc: Computer Graphics, Vision, and Games</h2>
+            <h4>Summary</h4>
+            <ul class="topics">
+                <li>C, C++, Java, HTML, CSS, JavaScript, Bash</li>
+                <li>Embedded programming (Arduino Uno) of an LED-powered game.</li> 
+                <li>Linux files, shell script, LaTex documents.</li> 
+                <li>Client-side web pages development, written a WordPress blog and personal webpage</li>
+                <li>Object-Oriented Programming</li> 
+                <li>Database modelling in PostgreSQL.</li>
+                <li>Group work software development project: Buccaneer board game</li>
+                <li>Groups and files administration as well as disk management via VMWare emulation</li>
+                <li>Data Structures: Stacks, Queues, Matrices, Maps</li>
+                <li>Algorithms: Search, Sorts, Graph, Greedy</li>
+                <li>WebGL 3D and game programming – rendering, buffers, lighting, transformation mathematics, collisions, physics – created a virtual room tour.</li>
+                <li>Artificial Intelligence – maze traversal, fuzzy logic, data mining</li>
+                <li>Computer Vision</li>
+            </ul>
+        </div>
+        <div id="XtTraining" class="tabcontent">
+            <h2>Online Courses</h2>
+            <h4>Google Digital Garage</h4><span>2020-</span>
+            <ul class="topics">
+                <li>Digital Marketing</li>
+            </ul>
+            <h4>Futurelearn</h4><span>2020-</span>
+            <ul class="topics">
+                <li>Building Online Presence</li>
+                <li>Remote Collaboration</li>
+            </ul>
+            <h4>Udacity</h4><span>2018-</span>
+            <ul class="topics">
+                <li>2D Game Development with LibGDX</li>
+                <li>Introduction to Algorithms</li>
+                <li>Introduction to Computing Theory</li>
+            </ul>
+            <h4>Udemy</h4><span>2017-</span>
+            <ul class="topics">
+                <li>Build your first Unreal games</li>
+                <li>Understanding JavaScript</li>
+                <li>Complete NodeJS</li>
+                <li>C Programming for Beginners</li>
+                <li>Beginner C++</li>
+                <li>Number Theory for Programmers</li>
+                <li>Sorting Algorithms</li>
+            </ul>
+            <h2>Practice</h2>
+            <h4>Codecademy</h4><span>2015/6-</span>
+        </div>
+        <div id="Projects" class="tabcontent">
+            <h4>Twin-Stick Shooter style space game</h4>
+            <span>Java, 2D, collisions, particle effects</span>
+            <p>Applying what I had learnt from the beginner's game programming course, I made a twin-stick shooter where players can move across the map and shoot enemies before they reach some gate. A score system for the player and enemies and a collision system for player, enemies, and bullets were implemented. The screens (for the most part) are resizable. There are three options to choose as fire type. I added particle systems at the end of development, which get set off once destroyed.</p><span><a href="https://youtu.be/9c-_x2Pd-HE">Interim version</a></span>
+            <br>
+            <h4>ThreeJS Practice Demos</h4>
+            <span>JS, WebGL, geometries, file reading</span>
+            <p>As part of going through the documentries and fundamentals pages of the framework, I gradually apply some of the concepts onto demos where I practice some JavaScript feautres and WebGL concepts. I have covered primitives and scene graphs to build a scene, materials and lights to make a room, creating a collection of items (and rotating them all), loading a file(s) into a scene, and picking one.</p><span><a href="https://kaganema.github.io/samples/Webgl.html">Link</a></span>
+            <br>
+            <h4>Personal Media Site Backup</h4>
+            <span>JS, Node, multimedia, file uploads, database connection</span>
+            <p>A personal multimedia site to play as a backup and a testing ground on file management for web content. Site's section include: videos, images, games, scenes, and documents.</p>
+        </div>
+        <div id="Contact" class="tabcontent">
+            <ul class="topics">
+                <li>Tel: UK +411581603</li>
+                <li><a href="https://www.linkedin.com/in/emir-atik-22a84816b/">LinkedIn</a></li>
+                <li><a href="https://kaganema.github.io/upload-blog.html">Project Updates</a></li>
+<!--                <li><a href="../../upload-blog.md"></a></li>-->
+                <!--<li>YouTube</li>-->
+            </ul>
+        </div>
+    </main>
+	<footer></footer>
+	<script type="text/javascript" src="script/user.js"></script>
+</body>
+
+</html>

@@ -1,8 +1,9 @@
 # kaganema.github.io
 Main page to project locations
+[CV Highlights] <br>
 <a href="portfolio/viewers/index.html">Portfolio:</a> <br>
-[Samples](samples/mini-projects.md)  
-[Current update section](upload-blog.md)
+[Samples](samples/mini-projects.md)  <br>
+[Current update section](upload-blog.md) <br>
 [You can also check the latest logs of in work or completed projects here](project-browse.md)
 <br>
 <a href="videos.html">Videos </a><br>
