@@ -10,7 +10,7 @@ The latest implementation of the game now involves an addition of the options me
 ###### Date: 28/07/2021
 
 #### [THREE.JS File Loading Example](samples/three/5-file-loader-scene-(obj)/world.html)
-My introduction to loading 3D models into the browser. Includes a demo scene of place. The demo is for Wavefront (OBJ) files. OBJ Model and texture made by me (kaganema) in [Blender](https://www.blender.org/), [Inkscape](https://inkscape.org/) and [GIMP](https://www.gimp.org/) respectively. [Link](samples/three/5-file-loader-scene-(obj)/world.html)
+My introduction to loading 3D models into the browser. Includes a demo scene of place. The demo is for Wavefront (OBJ) files. **Give it a few seconds and then touch the screen to see the results.** OBJ Model and texture made by me (kaganema) in [Blender](https://www.blender.org/), [Inkscape](https://inkscape.org/) and [GIMP](https://www.gimp.org/) respectively. [Link](samples/three/5-file-loader-scene-(obj)/world.html)
 ###### Date: 28/03/2021
 
 #### [THREE.js Shadow Map Practice](samples/three/4-shadow-map-directional/scene.html)
