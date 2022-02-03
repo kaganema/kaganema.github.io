@@ -1,3 +1,7 @@
+/*
+Author: Emir Atik (kaganema)
+Version: 1.2
+*/
 const renderer = new THREE.WebGLRenderer();
 const labelElements = document.querySelector('#labels');
 const camera = new THREE.PerspectiveCamera(75, renderer.domElement.width / renderer.domElement.height, 0.1, 1000);
