@@ -1,0 +1,128 @@
+html, body {
+    margin: 0;
+    height: 100%;
+/*
+    position: relative; 
+  width: 100%;
+  overflow: hidden;
+*/
+}
+
+h1 {
+    text-align: center;
+    padding: 1px;
+}
+
+header, h1, footer {
+    z-index: 50;
+    margin: auto;
+    font-family: Verdana, "Segoe UI", "Trebuchet MS", sans-serif;
+    text-shadow: 0 0 5px #6699CC, 0 0 2px #6699CC;
+    position: absolute;
+    color: #999999;
+    display: block;
+}
+
+p {
+    margin: auto;
+    font-family: Verdana, "Segoe UI", "Trebuchet MS", sans-serif;
+    text-shadow: 0 0 5px #6699CC, 0 0 2px #6699CC;
+}
+
+header {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    visibility: hidden;
+    margin: auto;
+    padding: 10px;
+    z-index: 2;
+    align-self: center;
+    background-color: #424242;
+}
+
+canvas {
+   width: 100%;
+   height: 100%;
+   display: block;
+    z-index: 1;
+    position: fixed;
+}
+
+/*main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}*/
+
+#screen {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.screen {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#labels {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    color: white;
+    background-color: dimgrey;
+    width: 80%;
+}
+
+#labels>div {
+    display: none;
+    position: relative;
+    width: 70%;
+    height: 70%;
+    padding: 10px;
+    margin: auto;
+    /*top: 20px;*/
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Verdana, "Segoe UI", "Trebuchet MS", sans-serif;
+    /*background-color: #3F3939;*/
+    background-color: rgba(63,57,57, 0.8);
+    z-index: 2;
+    user-select: none;
+    text-shadow: 2px 2px 5px #232323, -2px -2px 5px #232323;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px #9A9999, -4px -4px 10px #9A9999;
+    /*opacity: 0.9;*/
+}
+
+
+.samp {
+    width: 30%;
+    height: 30%;
+    /*float: right;*/
+    /*margin: auto;*/
+    margin-left: 20px;
+}
+
+.samp:hover {
+    transform: scale(1.2, 1.2);
+}
+
+/*#labels>div>img {
+    width: 30%;
+    height: 30%;
+    float: right;
+    margin: auto;
+}*/

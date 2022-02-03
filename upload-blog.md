@@ -1,5 +1,13 @@
 Latest Releases
 
+#### New THREEJS sample project.
+I have finally managed to make a more expansive project with loading OBJ files, along with picking with raycaster and applying HTML elements to selected models. It is further subject to change [Demo](samples/three/5-obj_mug_selections/world.html)
+###### Date: 03/02/2022
+
+#### Beginner LibGDX Java Game Live!
+My Java game is now available as a web game, play it [now](portfolio/content/documents/portal-superblaster/index.html).
+###### Date: 27/01/2022
+
 #### LibGDX Game Initial Version Video
 I have made a video showing the most basic functioning version of the previously mentioned game. [Youtube video](https://youtu.be/9c-_x2Pd-HE)
 ###### Date: 28/07/2021
