@@ -118,9 +118,10 @@ const mug_options = [{
     price: "£1.80"
 }];
 
-//OBJ File loader practice
+//Shared OBJ File loader
 const obj_loader = new THREE.OBJLoader();
 
+// DOM elements
 let elem ;
 let hd ;
 let dtx ;
@@ -288,7 +289,10 @@ let ray = new THREE.Raycaster();
 //intersected objects
 let intersects;
 
-
+/*
+This function determines the selected object by getting the 
+closest to the raycast. Executed upon a click event.
+*/
 function picker(event) {
     ray.setFromCamera({
         x: (event.clientX / renderer.domElement.clientWidth) * 2 - 1,
@@ -312,8 +316,7 @@ function picker(event) {
         });
     }
     console.log(intersects);
-    //Next stage: Add HTML cards to attached object
-    //content.forEach();
+    //Option: Try to align HTML elements to be just above the mugs. 
 }
 
 /*let vPoint = new THREE.Vector3();
@@ -329,6 +332,7 @@ function cardView(doc, mesh) {
 
 //function cardView(ins) {}
 
+// Obsolete: not in use
 function clearPickPosition() {
   // unlike the mouse which always has a position
   // if the user stops touching the screen we want
@@ -338,7 +342,7 @@ function clearPickPosition() {
   pickPosition.y = -100000;
 }
 
-//Resize the canvas to screen width
+//Resize the canvas to screen width, based on source code from https://threejs.org/manual/#en/responsive
 function resize(ren) {
     const cren = ren.domElement;
     const pixelRatio = window.devicePixelRatio;
@@ -371,7 +375,7 @@ window.addEventListener('resize', render);
 
 document.addEventListener('click', picker, false);
 document.addEventListener('touchend', picker, false);
-//Set to hide objects when clicking out.
+//Set to hide objects when clicking out (for mobile use).
 /*document.addEventListener('touchcancel', () => {
     content.forEach(o => o.info.style.display = 'none');
 }, false);*/
