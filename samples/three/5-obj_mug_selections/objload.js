@@ -370,7 +370,7 @@ pan.addEventListener('change', render);
 window.addEventListener('resize', render);
 
 document.addEventListener('click', picker, false);
-//document.addEventListener('touchend', picker, false);
+document.addEventListener('touchend', picker, false);
 //Set to hide objects when clicking out.
 /*document.addEventListener('touchcancel', () => {
     content.forEach(o => o.info.style.display = 'none');
