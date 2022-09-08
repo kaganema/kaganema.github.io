@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>FBX Sample in THREE.js by kaganema</title>
+	<meta name="author" content="Emir Atik (kaganema)">
+	<meta name="description" content="Grasping concepts of loading an FBX file in three.js">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="canvas-elements.css">
+	<link rel="icon" type="image/x-icon" href="assets/icons8-fbx-16.png"/>
+</head>
+
+<body>
+	<header></header>
+	<main>
+        <div id="actions" class="cont">
+<!--            <button class="btn">Gesture</button>-->
+            <button id="Armature|HeadTwist" class="btn">Head Twist</button>
+            <button id="Armature|TwistTorso1" class="btn">Spin</button>
+            <button id="Armature|Reach1Full" class="btn">Reach</button>
+            <button id="Armature|IdleMove" class="btn">Still</button>
+        </div>
+        <div id="moves" class="cont">
+            <!-- We'll put them here for now -->
+            <!--<div id="move" class="btn">Move</div>
+            <div id="left" class="btn">RtLeft</div>
+            <div id="right" class="btn">RtRight</div>-->
+            <button id="move" class="btn">Move</button>
+            <button id="left" class="btn">RtLeft</button>
+            <button id="right" class="btn">RtRight</button>
+        </div>
+    </main>
+	<footer></footer>
+    <script src="imports/three.min.js"></script>
+    <script src="imports/WebGL.js"></script>
+    <script src="imports/inflate.min.js"></script>
+    <script src="imports/OrbitControls.js"></script>
+    <script src="imports/FBXLoader.js"></script>
+	<script type="text/javascript" src="fbx_scene.js"></script>
+    <a target="_blank" href="https://icons8.com/icon/24982/fbx">FBX</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+</body>
+
+</html>

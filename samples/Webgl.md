@@ -9,5 +9,6 @@ by kaganema
 [Modified Mobile Version](three/3a-responsive-basic/view.html)
 4. [Simple Shadow map world](three/4-shadow-map-directional/scene.html)
 5. [A File Loading Scene](three/5-file-loader-scene-(obj)/world.html) | [Product Selection Site](three/5-obj_mug_selections/world.html)
+6. [Robot Navigation - Imported Animation Model](three/6-animations_with_fbx_robot/scene.html)
 <br>
 <br>
