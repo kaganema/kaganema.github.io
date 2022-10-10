@@ -10,196 +10,268 @@
 	<!--<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.2.228/build/pdf.min.js"></script>-->
 </head>
 <body>
-<header>
-<ul class="bread">
-<li>CV</li>
-</ul>
-<div class="topnav">
-  <a href="index.html">Home</a>
-  <a class="active" href="#cv">CV</a>
-  <a href="contact.html">Contact</a>
-  <a href="about.html">About</a>
-</div>
-<h1>Emir K. Atik</h1>
-<h3>An overview of the background</h3>
-</header>
+	<header>
+	<ul class="bread">
+	<li>CV</li>
+	</ul>
+	<div class="topnav">
+	  <a href="index.html">Home</a>
+	  <a class="active" href="#cv">CV</a>
+	  <a href="contact.html">Contact</a>
+	  <a href="about.html">About</a>
+	</div>
+	<h1>Emir K. Atik</h1>
+	<h3>An overview of the background</h3>
+	</header>
 
-<main>
-<div class="tab"><!--Games, Graphics, Models/Assets, Mini Software, Web/Net, RD, Music(bonus)-->
-<button class="tablink" onclick="openPanel(event, 'Profile')" id="defaultOpen">Profile</button>
-<button class="tablink" onclick="openPanel(event, 'Skills')">Skills</button>
-<button class="tablink" onclick="openPanel(event, 'Education')">Education</button>
-<button class="tablink" onclick="openPanel(event, 'Training')">Training</button>
-<button class="tablink" onclick="openPanel(event, 'Work')">Work Experience</button>
-<button class="tablink" onclick="openPanel(event, 'Activities')">Interests</button>
-<button class="tablink" onclick="openPanel(event, 'Achievements')">Achievements</button>
-<button class="tablink" onclick="openPanel(event, 'cert')">Certificates</button>
-<button class="tablink" onclick="openPanel(event, 'pdf')">Document</button>
-<button class="tablink" onclick="openPanel(event, 'samples')">Sample Works</button>
-</div>
-<!-- Tab content -->
-<div id="Profile" class="tabcontent">
-  <p>Computer Science graduate from Aberystwyth University seeking a developer position to further apply problem solving, design 
-  and planning skills, as well as adaption to different environments. Enthusiastic worker with expansive interests in different topics.
-  Aspires to creativity, persistence, and innovation. I also practice questions on hackathons. The eventual goal is to create some games, 
-  with addition to fields requiring heavy use of graphics. 
-  Other fields of skills development include in fields involving web projects for scenarios, networking, and hardware. 
-  Generally prefers taking incremental steps to developing projects and clear understanding of technologies.</p>
-  <ul class="topics">Traits
-	<li>Problem solver</li>
-	<li>Creative ideas</li>
-	<li>Effective communicaiton</li>
-	<li>Fast and strong learner</li>
-	<li>Attention to detail</li>
-	<li>Overall Completionist</li>
-  </ul>
-</div>
-<div id="Skills" class="tabcontent">
-  <ul class="skillset"><!--Bredcrumbs: 1. Lang(Replaced by name)/All, 2. Lang/Games, Games, Lib(Replaced by name)/Graphics, Libs/Web, Lang/Web, DB, Lang/AI, Lib/AI, Design/Ink, 3D, Video-->
-  <li>Programming: <a href="#c">C</a>, <a href="#cplus">C++</a>, <a href="javalang.html">Java</a>, <a href="javascript.html">Javascript</a>, <a href="#">C#</a>, Bash, <a href="#python">Python</a></li>
-  <li>Presentation: Powerpoint, video editing, Word</li>
-  <li>Games: <a href="#unity">Unity3d</a>, <a href="#unreal">Unreal</a>, Blender, Java, Three.js</li>
-  <li>Graphics: <a href="#">OpenGL</a>, WebGL, Linear Algebra</li>
-  <li>Web: <a href="frontent.html">HTML</a>, <a href="frontent.html">CSS</a>, <a href="frontent.html">JavaScript</a>, <a href="#">Inkscape</a>, <a href="#">Bootstrap</a>, <a href="#">Bulma</a>, <a href="node.html">Node.js</a>, <a href="vue.html">Vue</a></li>
-  <li>Databases: <a href="#sql">PostgreSQL</a>, Oracle</li>
-  <li>AI: <a href="#">Anaconda</a>, Search Algorithms, Fuzzy Logic, First-Order, Bayesian, ANN</li>
-  <li>Graphic Design: <a href="inkscape.html">Inkscape</a></li>
-  <li>3D: <a href="#3ds">3DS Max</a>, <a href="#blender">Blender</a></li>
-  <li>Animation: <a href="#blender">Blender</a>, <a href="#dragonbs">DragonBones</a></li>
-  <li>Video Editing: Blender</li>
-  </ul>
-</div>
-<div id="Education" class="tabcontent"> 
-<h3>Aberystwyth University</h3>
-<h3>(2014-2018)</h3>
-<h2>BSc: Computer Graphics, Vision, and Games</h2>
-<h4>Modules:</h4>
-<ul class="edu">
-<li><a href="#">Major Project (3)</a> Mars Rover Simulator; click link to see what went wrong.</li>
-<li>Introduction to Computer Hardware, OS, and UNIX Tools (1): Bash, Shell, LaTex conversion. Weekly workshops.</li>
-<li><a href="#">Introduction to Programming (1)</a>: LED generate shooting block game on Arduino Uno</li>
-<li>Object-Oriented Programming (1): A tile-based game, "Bonks & Zapps", dealing with population management, in Java</li>
-<li>Web Development Tools (1): Create a blog on Wordpress, set e-commerce, and write a webpage in (X)HTML.</li> 
-<li>Problems & Solutions (1): Binary math (signed integers), matrices, time complexities, search and sort algorithms. Written weekly portfolios 
-regarding the topics covered in lectures for marks.</li>
-<li>Program Design, Data Structures and Algorithms (2): includes linked lists, graphs algorithms, and design patterns. Assignment: 
-Writing a compressor program to compress, then decompress, and return the frequencies of each letter in text.</li>
-<li>Modelling Persistent Data (2): Write a venues database for Student Union's clubs and societies in PostgreSQL.</li>
-<li>Software Engineering (2): Write a Buccaneer game in Java 8. Involved in unit testing and UI prototyping.</li>
-<li>C/C++ & Environments (2): Write a trolley storage network across two programs.</li>
-<li><a href="#">Applied Graphics</a> (2): Animate a short story using animations and video editing techniques (transitions) followed by 
-a "making of" video. Tools: GIMP & Blender</li>
-<li>Artificial Intelligence (2): Solve problem of crossing a bank, followed by implementation of two heuristics calculations for a maze
-traversal in Java.</li>
-<li>Computer Graphics and Games (3): Make a virtual interactive room or scene using WebGL.</li>
-<li>Computer Vision (3): Exam-based assessment depicting scanarios in the entertainment industry. Practicals involved using OpenCV.</li>
-<li>Internet Services Administration (3): Managing groups, storage, and file shares in Windows Server 2008 and Linux Mint via VMWare Workstations.</li>
-<li>Machine Learning (3): Two assignments using WEKA to output and analyse datasets. One involved fitting with missing values, while the other involved 
-correcting an error in an implementation.</li>
-<li>Space Robotics (3): Exam-based with use of research papers and explanations of concepts.</li>
-</ul>
-<a href="https://onedrive.live.com/embed?cid=0DF8E79814FE8FA5&resid=DF8E79814FE8FA5%21666&authkey=ABa2ENWzAnZqwwY&em=2" target="_blank">Results: </a>
-<iframe src="https://onedrive.live.com/embed?cid=0DF8E79814FE8FA5&resid=DF8E79814FE8FA5%21666&authkey=ABa2ENWzAnZqwwY&em=2" width="1000" height="288" frameborder="0" scrolling="no"></iframe>
-</div>
-<div id="Training" class="tabcontent">
-<h2 style="text-decoration: underline">Codecademy:</h2>
-<h3>Completed:</h3>
-<div class="lists">
-<h4>Introduction to HTML</h4>
-<h4>Shell (Learn the Command Line)</h4>
-<h4>Learn CSS</h4>
-<h4>Learn Python 2</h4>
-<h4>Introduction to SQL</h4>
-</div>
-<br>
-<h2 style="text-decoration: underline">Udemy:</h2>
-<div class="lists">
-<h4><a href="https://www.udemy.com/course/number-system/" target="_blank">Number Theory for Programmers</a></h4>
-<a class="view-document" href="../content/documents/UC-5F04WW9E.pdf" target="_blank">View document</a> 
-<a class="downloadpdf" type="application/pdf" href="documents/UC-5F04WW9E.pdf" download><i class="fas fa-file-pdf-o fa-pdf-custom" aria-hidden="false"></i></a>
-    <h4><a href="https://www.udemy.com/course/sorting-algorithms/">Sorting Algorithms</a></h4><i class="fas fa-file-pdf"></i>
-<a class="view-document" href="../content/documents/UC-03S24SIP.pdf" target="_blank">View document</a> 
-<h4><a href="https://www.udemy.com/course/free-2d-game-character-animation-dragonbones/">Dynamic Game Character Creation in Inkscape</a></h4>
-<h4><a href="https://www.udemy.com/course/c-for-technical-interview/">C Programming for Beginners</a></h4>
-<h4><a href="https://www.udemy.com/course/understand-javascript/">Understanding JavaScript</a></h4>
-</div>
-<div class="lists">
-<h4><a href="https://www.udemy.com/course/nodejs-the-complete-guide/">Complete Guide to Node JS</a></h4>
-</div>
-<h2 style="text-decoration: underline">Udacity:</h2>
-<h2 style="text-decoration: underline">EdX</h2>
-</div>
-<div id="Work" class="tabcontent">
-<h3>Gameplay Developer</h3>
-<h4>Round Square Studios, Glyndwr University, Wrexham</h4>
-<p>Voluntary work for writing a controls system for twin-stick shooter in Unreal Engine. The goal was to write the controls so that 
-the character can move with keyboard or twinstick controls.</p>
-<p>Managed to successfully switch the controls from the defined template to map them to move rotation relative to the 
-cursor's angle, as well as successfully working on the keyboard controls in the visual script.</p>
-<br>
-<h3>Production Operative</h3>
-<h4>Tomlinson's Dairies, Minera, Wrexham</h4>
-<p>Short time work in moving products around in trolleys.</p>
-<p>Developed a sense of management and reaction skills.</p>
-<br>
-<h3>Graphic Designer for the new GO Wales Banner</h3>
-<h4>Aberystwyth University Careers Centre, Aberystwyth </h4>
-<p>Developed a banner for the new promotional material for GO Wales in Inkscape, in request by the clients and 
-part of a voluntary role.</p>
-<p>I was to experimenting with the tools I had used, providing interesting results.</p>
-<p>Able to communicate with the client about my results and receive his additions to fix the banner, improving my 
-creativity and communication skills.</p>
-<br>
-<h3>Computer Science Student Demonstrator</h3>
-<h4>Aberystwyth University, Aberystwyth </h4>
-<p>Advised and assisted 2nd year students in image processing in practical using GIMP. </p>
-<p>Whilst there were some difficulty putting effort into answering more complicating questions,
-communication skills were developed and I was able to describe the contents or help beginners
-navigate the software. </p>
-</div>
-<div id="Activities" class="tabcontent">
-<h4>Interests</h4>
-<ul class="skillset">
-<li>AI</li>
-<li>Geography</li>
-<li>Internet culture & Human behaviour</li>
-<li>GPU & Performance</li>
-</ul>
-<h4>Activities</h4>
-<ul class="skillset">
-<li>Kickboxing</li>
-<li>Archery</li>
-</ul>
-<h4>Hobbies</h4>
-<ul class="skillset">
-<li>Conversations of plans and ideas.</li>
-<li>Gaming</li>
-<li>Reading</li>
-<li>Music</li>
-</ul>
-</div>
-<div id="pdf" class="tabcontent">
-<a href="https://emaprofiles.files.wordpress.com/2019/11/emiratikcvwp.pdf" download>
-<button id="doc" type="application/pdf" class="download">
-Get PDF
-</button>
-</a>
-<!--<object data="../projects/doc/EmirAtikCV[GRB]" width="680" height="600"></object>-->
-</div>
-    <div id="samples" class="tabcontent">
-        <h4>Excel VBA Web Scraping Example</h4>
-        <p>After coming across the idea of web scraping using VB on a Youtube tutorial, I applied the example to the TIOBE Index for languages ranking as of 6 June 2020. This table would then be further worked with a search box.</p>
-        <a href="../../samples/excel-macros/macros.html">View scraped result.</a>
-        <h4>Excel VBA Search Box</h4>
-        <p>Expanding the TIOBE table by writing a search macro to filter out the languages by the matching letter patterns. Based on another Youtube video with application to my scapred set.</p>
-        <h4>THREE.js Library Practice Works</h4>
-        <p>Currently ongoing project of practising using THREE.js features, ranging from making primitive shapes and groups to loading external files or scenes.</p>
-		<h4>Progress Colour Codes in OpenOffice Calc</h4>
-		<p>Using OpenOffice macro programming to create coloured cells to track progress of work or projects (cross-application), also getting moved to the Completed list once reaching a certain target (workbook exclusive).</p> 
-    </div>
-</main>
-<p>You can find the PDF icon <a href="https://fontawesome.com/icons/file-pdf">here</a>
-<a href="https://emaprofiles.files.wordpress.com/2019/11/emiratikcvwp.pdf" target="_blank">Preview the CV.</a>
-<script src="user.js"></script>
+	<main>
+	<div class="tab"><!--Games, Graphics, Models/Assets, Mini Software, Web/Net, RD, Music(bonus)-->
+	<button class="tablink" onclick="openPanel(event, 'Profile')" id="defaultOpen">Profile</button>
+	<button class="tablink" onclick="openPanel(event, 'Skills')">Skills</button>
+	<button class="tablink" onclick="openPanel(event, 'Education')">Education</button>
+	<button class="tablink" onclick="openPanel(event, 'Training')">Training</button>
+	<button class="tablink" onclick="openPanel(event, 'Work')">Work Experience</button>
+	<button class="tablink" onclick="openPanel(event, 'Activities')">Interests</button>
+	<button class="tablink" onclick="openPanel(event, 'Achievements')">Achievements</button>
+	<button class="tablink" onclick="openPanel(event, 'cert')">Certificates</button>
+	<button class="tablink" onclick="openPanel(event, 'pdf')">Document</button>
+	<button class="tablink" onclick="openPanel(event, 'samples')">Sample Works</button>
+	</div>
+	<!-- Tab content -->
+	<div id="Profile" class="tabcontent">
+		<h4>Summary</h4>
+		<p>Computer Science graduate from Aberystwyth University seeking a developer position to further apply problem solving, design 
+			and planning skills, as well as adaption to different environments. Enthusiastic worker with expansive interests in different topics.
+			Aspires to creativity, persistence, and innovation. I also practice questions on hackathons. The eventual goal is to create some games, 
+			with addition to fields requiring heavy use of graphics. 
+			Other fields of skills development include in fields involving web projects for scenarios, networking, and hardware. 
+			Generally prefers taking incremental steps to developing projects and clear understanding of technologies.</p>
+		<!--<h4>Summary</h4>
+            <p>Computer Graphics, Vision, and Games graduate from Aberystwyth University who has since continued to learn and expand the skillset. 
+		Well organized, creative and a strong problem solver with outstanding organisational, analytical and decision-making skills. 
+		Excellent planning skills in setting and achieving goals, including meeting tight deadlines. Always thinking of something to do and how to apply them. 
+		Cooperative and helpful team participant, with ability to think and work well independently. Systematic, logical thinker, able to compartmentalise program 
+		aspects and build integrative systems. Has expanded interest in varying industries.</p>-->
+	  <h4>Personal Traits</h4>
+	  <ul class="topics">
+		<li>Problem solver</li>
+		<li>Creative ideas</li>
+		<li>Effective communicaiton</li>
+		<li>Fast and strong learner</li>
+		<li>Attention to detail</li>
+		<li>Overall Completionist</li>
+	  </ul>
+	</div>
+	<div id="Skills" class="tabcontent">
+		<h4>Topics</h4>
+		<ul class="skillset"><!--Bredcrumbs: 1. Lang(Replaced by name)/All, 2. Lang/Games, Games, Lib(Replaced by name)/Graphics, Libs/Web, Lang/Web, DB, Lang/AI, Lib/AI, Design/Ink, 3D, Video-->
+			<li>Software Development: Waterfall, Kanban, Unit Testing</li>
+			<li>Games: Game states, collision detection, event handling, modes</li>
+			<li>Graphics: Rendering, Linear Algebra, Camera Projection, Lighting, Texture Mapping</li>
+			<li>Web: Layouts, Flexbox, Events, REST API, Templates, Database Connectivity / Pooling, Canvas, WebGL</li>
+			<li>Databases: Relational Algebra, SQL, Transactions</li>
+			<li>AI: Search Algorithms, Fuzzy Logic, First-Order, Bayesian, ANN</li>
+			<!--<li>Graphic Design: </li>-->
+			<!--<li>3D: </li>-->
+			<li>Animation: Keying, Frames, Dope Sheet</li>
+			<li>Video Editing: Cuts, Transitions, Blends, Tracking</li>
+		</ul>
+		<h4>Tools</h4>
+		  <ul class="skillset"><!--Bredcrumbs: 1. Lang(Replaced by name)/All, 2. Lang/Games, Games, Lib(Replaced by name)/Graphics, Libs/Web, Lang/Web, DB, Lang/AI, Lib/AI, Design/Ink, 3D, Video-->
+			<li>Programming: <a href="#c">C</a>, <a href="#cplus">C++</a>, <a href="javalang.html">Java</a>, <a href="javascript.html">Javascript</a>, <a href="#">C#</a>, Bash, <a href="#python">Python</a></li>
+			<li>Games: <a href="#unity">Unity3d</a>, <a href="#unreal">Unreal</a>, <!--Blender,--> libGDX, Three.js</li>
+			<li>Graphics: <a href="#">OpenGL (GLFW, GLM)</a>, WebGL (Three.JS)</li>
+			<li>UI: JavaFX</li>
+			<li>Software Development: JUnit, Gradle</li>
+			<li>Web: <a href="frontent.html">HTML</a>, <a href="frontent.html">CSS</a>, <a href="frontent.html">JavaScript</a>, <a href="#">Inkscape</a>, <a href="#">Bootstrap</a>, <a href="#">Bulma</a>, <a href="node.html">Node.js</a>, ExpressJS, Pug<!--, <a href="vue.html">Vue</a>--></li>
+			<li>Databases: <a href="#sql">PostgreSQL</a>, Oracle</li>
+			<li>AI: <a href="#">Anaconda</a></li>
+			<li>Graphic Design: <a href="inkscape.html">Inkscape</a></li>
+			<li>Presentation: Powerpoint, video editing, Word</li>
+			<li>3D: <a href="#3ds">3DS Max</a>, <a href="#blender">Blender</a></li>
+			<li>Animation: <a href="#blender">Blender</a>, <a href="#dragonbs">DragonBones</a></li>
+			<li>Video Editing: Blender</li>
+		</ul>
+	</div>
+	<div id="Education" class="tabcontent"> 
+	<h3>Aberystwyth University</h3>
+	<h3>(2014-2018)</h3>
+	<h2>BSc: Computer Graphics, Vision, and Games</h2>
+		<h4>Summary</h4>
+            <ul class="topics">
+                <li>C, C++, Java, HTML, CSS, JavaScript, Bash</li>
+                <li>Embedded programming (Arduino Uno) of an LED-powered game.</li> 
+                <li>Linux files, shell script, LaTex documents, Regular Expressions.</li> 
+                <li>Client-side web pages development, written a WordPress blog and personal webpage</li>
+                <li>Object-Oriented Programming</li> 
+                <li>Database modelling in PostgreSQL.</li>
+                <li>Group work software development project: Buccaneer board game (Java 8, JUnit, JavaFX, SVN)</li>
+                <li>Groups and files administration as well as disk management via VMWare emulation</li>
+                <li>Data Structures: Stacks, Queues, Matrices, Maps</li>
+                <li>Algorithms: Search, Sorts, Graph, Greedy</li>
+                <li>WebGL 3D and game programming – rendering, buffers, lighting, transformation mathematics, collisions, physics – created a virtual room tour.</li>
+                <li>Artificial Intelligence – maze traversal, fuzzy logic, data mining</li>
+                <li>Computer Vision</li>
+            </ul>
+	<!--<h4>Modules:</h4>
+	<ul class="edu">
+	<li><a href="#">Major Project (3)</a> Mars Rover Simulator; click link to see what went wrong.</li>
+	<li>Introduction to Computer Hardware, OS, and UNIX Tools (1): Bash, Shell, LaTex conversion. Weekly workshops.</li>
+	<li><a href="#">Introduction to Programming (1)</a>: LED generate shooting block game on Arduino Uno</li>
+	<li>Object-Oriented Programming (1): A tile-based game, "Bonks & Zapps", dealing with population management, in Java</li>
+	<li>Web Development Tools (1): Create a blog on Wordpress, set e-commerce, and write a webpage in (X)HTML.</li> 
+	<li>Problems & Solutions (1): Binary math (signed integers), matrices, time complexities, search and sort algorithms. Written weekly portfolios 
+	regarding the topics covered in lectures for marks.</li>
+	<li>Program Design, Data Structures and Algorithms (2): includes linked lists, graphs algorithms, and design patterns. Assignment: 
+	Writing a compressor program to compress, then decompress, and return the frequencies of each letter in text.</li>
+	<li>Modelling Persistent Data (2): Write a venues database for Student Union's clubs and societies in PostgreSQL.</li>
+	<li>Software Engineering (2): Write a Buccaneer game in Java 8. Involved in unit testing and UI prototyping.</li>
+	<li>C/C++ & Environments (2): Write a trolley storage network across two programs.</li>
+	<li><a href="#">Applied Graphics</a> (2): Animate a short story using animations and video editing techniques (transitions) followed by 
+	a "making of" video. Tools: GIMP & Blender</li>
+	<li>Artificial Intelligence (2): Solve problem of crossing a bank, followed by implementation of two heuristics calculations for a maze
+	traversal in Java.</li>
+	<li>Computer Graphics and Games (3): Make a virtual interactive room or scene using WebGL.</li>
+	<li>Computer Vision (3): Exam-based assessment depicting scanarios in the entertainment industry. Practicals involved using OpenCV.</li>
+	<li>Internet Services Administration (3): Managing groups, storage, and file shares in Windows Server 2008 and Linux Mint via VMWare Workstations.</li>
+	<li>Machine Learning (3): Two assignments using WEKA to output and analyse datasets. One involved fitting with missing values, while the other involved 
+	correcting an error in an implementation.</li>
+	<li>Space Robotics (3): Exam-based with use of research papers and explanations of concepts.</li>
+	</ul>-->
+	<a href="https://onedrive.live.com/embed?cid=0DF8E79814FE8FA5&resid=DF8E79814FE8FA5%21666&authkey=ABa2ENWzAnZqwwY&em=2" target="_blank">Results: </a>
+	<iframe src="https://onedrive.live.com/embed?cid=0DF8E79814FE8FA5&resid=DF8E79814FE8FA5%21666&authkey=ABa2ENWzAnZqwwY&em=2" width="1000" height="288" frameborder="0" scrolling="no"></iframe>
+	</div>
+	<div id="Training" class="tabcontent">
+	<h2 style="text-decoration: underline">Codecademy:</h2>
+	<h3>Completed:</h3>
+	<div class="lists">
+	<h4>Introduction to HTML</h4>
+	<h4>Shell (Learn the Command Line)</h4>
+	<h4>Learn CSS</h4>
+	<h4>Learn Python 2</h4>
+	<h4>Introduction to SQL</h4>
+	</div>
+	<br>
+	<h2 style="text-decoration: underline">Udemy:</h2>
+	<div class="lists">
+	<h4><a href="https://www.udemy.com/course/number-system/" target="_blank">Number Theory for Programmers</a></h4>
+	<a class="view-document" href="../content/documents/UC-5F04WW9E.pdf" target="_blank">View document</a> 
+	<a class="downloadpdf" type="application/pdf" href="documents/UC-5F04WW9E.pdf" download><i class="fas fa-file-pdf-o fa-pdf-custom" aria-hidden="false"></i></a>
+	    <h4><a href="https://www.udemy.com/course/sorting-algorithms/">Sorting Algorithms</a></h4><i class="fas fa-file-pdf"></i>
+	<a class="view-document" href="../content/documents/UC-03S24SIP.pdf" target="_blank">View document</a> 
+	<h4><a href="https://www.udemy.com/course/free-2d-game-character-animation-dragonbones/">Dynamic Game Character Creation in Inkscape</a></h4>
+	<h4><a href="https://www.udemy.com/course/c-for-technical-interview/">C Programming for Beginners</a></h4>
+	<h4><a href="https://www.udemy.com/course/understand-javascript/">Understanding JavaScript</a></h4>
+	</div>
+	<div class="lists">
+	<h4><a href="https://www.udemy.com/course/nodejs-the-complete-guide/">Complete Guide to Node JS</a></h4>
+	</div>
+	<h2 style="text-decoration: underline">Udacity:</h2>
+	<h2 style="text-decoration: underline">EdX</h2>
+	</div>
+	<div id="Work" class="tabcontent">
+	<h3>Gameplay Developer</h3>
+	<h4>Round Square Studios, Glyndwr University, Wrexham</h4>
+	<p>Voluntary work for writing a controls system for twin-stick shooter in Unreal Engine. The goal was to write the controls so that 
+	the character can move with keyboard or twinstick controls.</p>
+	<p>Managed to successfully switch the controls from the defined template to map them to move rotation relative to the 
+	cursor's angle, as well as successfully working on the keyboard controls in the visual script.</p>
+	<br>
+	<h3>Production Operative</h3>
+	<h4>Tomlinson's Dairies, Minera, Wrexham</h4>
+	<p>Short time work in moving products around in trolleys.</p>
+	<p>Developed a sense of management and reaction skills.</p>
+	<br>
+	<h3>Graphic Designer for the new GO Wales Banner</h3>
+	<h4>Aberystwyth University Careers Centre, Aberystwyth </h4>
+	<p>Developed a banner for the new promotional material for GO Wales in Inkscape, in request by the clients and 
+	part of a voluntary role.</p>
+	<p>I was to experimenting with the tools I had used, providing interesting results.</p>
+	<p>Able to communicate with the client about my results and receive his additions to fix the banner, improving my 
+	creativity and communication skills.</p>
+	<br>
+	<h3>Computer Science Student Demonstrator</h3>
+	<h4>Aberystwyth University, Aberystwyth </h4>
+	<p>Advised and assisted 2nd year students in image processing in practical using GIMP. </p>
+	<p>Whilst there were some difficulty putting effort into answering more complicating questions,
+	communication skills were developed and I was able to describe the contents or help beginners
+	navigate the software. </p>
+	</div>
+	<div id="Activities" class="tabcontent">
+	<h4>Interests</h4>
+	<ul class="skillset">
+	<li>AI</li>
+	<li>Geography</li>
+	<li>Internet culture & Human behaviour</li>
+	<li>GPU & Performance</li>
+	</ul>
+	<h4>Activities</h4>
+	<ul class="skillset">
+	<li>Kickboxing</li>
+	<li>Archery</li>
+	</ul>
+	<h4>Hobbies</h4>
+	<ul class="skillset">
+	<li>Conversations of plans and ideas.</li>
+	<li>Gaming</li>
+	<li>Reading</li>
+	<li>Music</li>
+	</ul>
+	</div>
+	<div id="pdf" class="tabcontent">
+	<a href="https://emaprofiles.files.wordpress.com/2019/11/emiratikcvwp.pdf" download>
+	<button id="doc" type="application/pdf" class="download">
+	Get PDF
+	</button>
+	</a>
+	<!--<object data="../projects/doc/EmirAtikCV[GRB]" width="680" height="600"></object>-->
+	</div>
+	    <div id="samples" class="tabcontent">
+		<h4>Excel VBA Web Scraping Example</h4>
+		<p>After coming across the idea of web scraping using VB on a Youtube tutorial, I applied the example to the TIOBE Index for languages ranking as of 6 June 2020. This table would then be further worked with a search box.</p>
+		<a href="../../samples/excel-macros/macros.html">View scraped result.</a>
+		<h4>Excel VBA Search Box</h4>
+		<p>Expanding the TIOBE table by writing a search macro to filter out the languages by the matching letter patterns. Based on another Youtube video with application to my scapred set.</p>
+		<!--<h4>THREE.js Library Practice Works</h4>-->
+		    <!--<p>Currently ongoing project of practising using THREE.js features, ranging from making primitive shapes and groups to loading external files or scenes.</p>-->
+		    <h4>Twin-Stick Shooter style space game</h4>
+            <span>Java, 2D, collisions, particle effects</span>
+            <p>Applying what I had learnt from the beginner's game programming course, I made a twin-stick shooter where players can move across the map and shoot 
+		    enemies before they reach some gate. A score system for the player and enemies and a collision system for player, enemies, and bullets were 
+		    implemented. The screens (for the most part) are resizable. There are three options to choose as fire type. I added particle systems at the end 
+		    of development, which get set off once destroyed.</p>
+		    <span><a href="https://youtu.be/9c-_x2Pd-HE">Interim video</a></span> | <span><a href="https://kaganema.github.io/portfolio/content/documents/portal-superblaster/index.html">Full demo</a></span>
+            <br>
+            <h4>ThreeJS Practice Demos</h4>
+            <span>JS, WebGL, geometries, file reading</span>
+            <p>As part of going through the documentries and fundamentals pages of the framework, I gradually apply some of the concepts onto demos where I practice 
+		    some JavaScript feautres and WebGL concepts. I have covered primitives and scene graphs to build a scene, materials and lights to make a room, 
+		    creating a collection of items (and rotating them all), loading a file(s) into a scene, and picking one.</p>
+		    <span><a href="https://kaganema.github.io/samples/Webgl.html">Link</a></span>
+            <br>
+		    <h4>Progress Colour Codes in OpenOffice Calc</h4>
+		    <p>Using OpenOffice macro programming to create coloured cells to track progress of work or projects (cross-application), 
+			    also getting moved to the Completed list once reaching a certain target (workbook exclusive).</p> 
+			<!--<h4>Colour coded Progress Tracker for OpenOffice Calc</h4>
+            <span>Office, macros, automation, spreadsheets</span>
+            <p>I wanted a way to track my tasks and personal projects in a fast manner, I would have the cells' 
+		background colour change according to how far the progress reached. I am not sure if Excel had an easier way of doing, but I found the conditional 
+		formatter a bit more confusing in this application. So, I went ahead to implementing a solution, mostly looked online and the documentation for 
+		possible tools to solutions, and edded with making a progress matcher in a application library, so that I may use it for other worksheets. 
+		However, considering my work will always need room for improvement, I wanted to make another macro and spreadsheet to transfer any project considered 
+		'finished' into another spreadsheet. Where I can reflect on what I understood and what could be worked on. For this, I created a worksheet specific 
+		macro for creating a dialog for any finished project and paste the relevant data from the form and cells into the completed sheet.
+		</p><span><a>Link (unavailable)</a></span>-->
+			<br>
+            <h4>Personal Media Site Backup</h4>
+            <span>JS, Node, multimedia, file uploads, database connection</span>
+            <p>A personal multimedia site to play as a backup and a testing ground on file management for web content. 
+		    Site's section include: videos, images, games, scenes, and documents.</p>
+		    <br>
+	    </div>
+	</main>
+	<p>You can find the PDF icon <a href="https://fontawesome.com/icons/file-pdf">here</a>
+	<a href="https://emaprofiles.files.wordpress.com/2019/11/emiratikcvwp.pdf" target="_blank">Preview the CV.</a>
+	<script src="user.js"></script>
 </body>
 </html>
