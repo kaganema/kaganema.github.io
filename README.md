@@ -12,6 +12,6 @@ Main page to project locations
 <a href="#">C Engine (possible)</a><br><br>
 Latest Projects: 
 
-08/08/2022
-[Unified Address Book](https://github.com/kaganema/unified-contacts-addressbook)
+08/08/2022<br>
+[Unified Address Book](https://github.com/kaganema/unified-contacts-addressbook)<br>
 A Java application allowing for storing records of a user's contacts or venues, including: Main phone number, primary email, extra contact references and web addresses or social media accounts.
