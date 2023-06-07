@@ -20,7 +20,7 @@ var lightPosition;
 var orbitSpeed = 0.1;
 
 var velocity = new THREE.Vector3();
-var direction = new THREE.Vector3();
+//var direction = new THREE.Vector3();
 
 // Raycasting elements.
 var bounds = []
@@ -84,8 +84,7 @@ setting.close();
 var spinners = [];
 
 // Bounding box for camera.
-var camCube = new THREE.Box3().setFromObject(controls.getObject());
-//var box;
+//var camCube = new THREE.Box3().setFromObject(controls.getObject());
 
 // Scene importer, based off of THREE.js ObjectLoader documentation
 const loader = new THREE.ObjectLoader();
@@ -166,12 +165,6 @@ loader.load('room.json', function(model) {
 });
 
 
-/*ray.setFromCamera({
-    x: (event.clientX / renderer.domElement.clientWidth) * 2 - 1,
-    y: -(event.clientY / renderer.domElement.clientHeight) * 2 + 1
-}, camera);*/
-
-
 // The intersected collision models.
 let intersect;
 // Raycaster for interactive icons.
@@ -209,13 +202,8 @@ scene.add(controls.getObject());
 // Use with earlier versions, solution found in Three.js repository 
 // (examples/jsm/PointerLockControls.js)
 document.addEventListener('keydown', function(e) {
-    /*ray.setFromCamera({
-        x: (e.clientX / renderer.domElement.clientWidth) * 2 - 1,
-        y: -(e.clientY / renderer.domElement.clientHeight) * 2 + 1
-    }, camera);*/
     switch(e.code){
         case 'ArrowUp':
-            //console.log(intersect);
             ray.set(controls.getObject().position, velocity);
             if(intersect.length > 0 && intersect[0].distance < 1){
                 velocity.z = 0;
@@ -301,9 +289,6 @@ function render() {
         let delta = (t - last) / 1000;
         velocity.x += velocity.x * 0.2 * delta;
         velocity.z += velocity.z * 0.2 * delta;
-        //direction.x = velocity.x;
-        //direction.z = velocity.z;
-        //direction.normalize();
         
         // Scene collision
         // Added intersect array logic separate from distance to avoid conflict between collection and collision.
