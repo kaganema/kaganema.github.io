@@ -86,6 +86,9 @@ var spinners = [];
 // Bounding box for camera.
 //var camCube = new THREE.Box3().setFromObject(controls.getObject());
 
+// Scene loading notification
+var loadingView = document.getElementById('loading');
+
 // Scene importer, based off of THREE.js ObjectLoader documentation
 const loader = new THREE.ObjectLoader();
 
@@ -156,10 +159,10 @@ loader.load('room.json', function(model) {
     //model.castShadow = true;
     //model.receiveShadow = true;
     scene.add(model);
+    loadingView.style.display = 'none';
 }, function(xhr) {
-    // Replace with DOM element: add element, call xhr object, remove element after 100%
-    //var progress = Math.round(xhr.loaded / xhr.total * 100);
-    console.log((xhr.loaded / xhr.total * 100) + '% complete');
+    loadingView.style.display = 'inline'; //or block , minimal difference in the current setup.
+    loadingView.textContent = Math.round(xhr.loaded / xhr.total * 100) + '% complete';
 }, function(err) {
     console.error('Scene did not load');
 });
