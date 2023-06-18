@@ -163,7 +163,6 @@ loader.load('room.json', function(model) {
     loadingView.style.display = 'none';
 }, function(xhr) {
     console.log(xhr);
-    console.log(xhr.loaded);
     console.log(xhr.total);
     loadingView.style.display = 'inline'; //or block , minimal difference in the current setup.
     loadingView.textContent = Math.round(xhr.loaded / xhr.total * 100) + '% complete';
