@@ -80,7 +80,6 @@ setting.add(tools, 'tone').onChange(function() {
 // Keep the controls hidden upon loading.
 setting.close();
 
-THREE.Cache.enabled = true;
 
 // Add animating objects into an array for a unified transformation.
 var spinners = [];
