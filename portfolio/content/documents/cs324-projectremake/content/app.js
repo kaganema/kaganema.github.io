@@ -167,8 +167,8 @@ loader.load('room.json', function(model) {
     console.log(xhr);
     loadingView.style.display = 'inline'; //or block , minimal difference in the current setup.
     //loadingView.textContent = Math.round(xhr.loaded / xhr.total * 100) + '% complete';
-    loadingView.textContent = 'Loaded ' + Math.round(xhr.loaded) + ' data';
-    //loadingView.textContent = 'Loading...';
+    //loadingView.textContent = 'Loaded ' + Math.round(xhr.loaded) + ' data';
+    loadingView.textContent = 'Loading...';
 }, function(err) {
     console.error('Scene did not load');
 });
