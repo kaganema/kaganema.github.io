@@ -93,6 +93,8 @@ var loadingView = document.getElementById('loading');
 // Scene importer, based off of THREE.js ObjectLoader documentation
 const loader = new THREE.ObjectLoader();
 
+loader.setCrossOrigin('anonymous');
+
 loader.load('room.json', function(model) {
     model.traverse(function(elem) {
         // Box 19 == Fences
