@@ -76,18 +76,14 @@ setting.close();
 // Add animating objects into an array for a unified transformation.
 var spinners = [];
 
+// Text while loading scene
+var loadingView = document.getElementById('loading');
+
 // Scene importer, based off of THREE.js ObjectLoader documentation
 const loader = new THREE.ObjectLoader();
 
 loader.load('room.json', function(model) {
     model.traverse(function(elem) {
-        // Box 19 == Leg
-        // Box == Open walls / Columns
-        // Box 9 == Garden porch
-        // Box 5 == Shelf top
-        // Box 6 doesn't need explicit calling
-        // Box 14 == Cupboard 'edge'
-        // Box 23 == Pillars
         if (elem instanceof THREE.DirectionalLight || elem instanceof THREE.PointLight) {
             elem.castShadow = true;
         }
@@ -130,10 +126,11 @@ loader.load('room.json', function(model) {
     });
     //model.castShadow = true;
     //model.receiveShadow = true;
+    loadingView.style.display = 'none';
     scene.add(model);
 }, function(xhr) {
-    // Replace with DOM element: add element, call xhr object, remove element after 100%
-    console.log((xhr.loaded / xhr.total * 100) + '% complete');
+    loadingView.style.display = 'inline'; //or block , minimal difference in this case.
+    loadingView.textContent = 'Loading...';
 }, function(err) {
     console.error('Scene did not load');
 });
