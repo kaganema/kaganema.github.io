@@ -135,7 +135,22 @@ loader.load('room.json', function(model) {
     console.error('Scene did not load');
 });
 
-console.log(spinners);
+// Elements for rendering the intro page in front of the canvas.
+var intro = document.getElementById('home');
+var readOnlyCan = document.querySelector('.foreground');
+
+// Set controls for textual information
+intro.addEventListener('click', function(event) {
+    readOnlyCan.style.display = 'block';
+    this.style.display = 'none';
+    setting.hide();
+});
+
+document.getElementById('close').addEventListener('click', function(e) {
+    readOnlyCan.style.display = 'none';
+    intro.style.display = 'block';
+    setting.show();
+})
 
 //Resize the canvas to screen width
 function resize(ren) {
