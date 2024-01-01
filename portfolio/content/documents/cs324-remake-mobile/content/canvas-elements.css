@@ -173,14 +173,16 @@ canvas {
 @media screen and (max-width: 600px) {
     #text-box {
         overflow: hidden;
+        padding: inherit 2rem;
     }
     #text-box:hover {
-        overflow: hidden;
+        overflow: auto;
         scroll-behavior: auto;
+        scroll-width: none;
     }
     
     #home {
-        width: 5%;
+        width: 10%;
         height: 5%;
     }
 }
