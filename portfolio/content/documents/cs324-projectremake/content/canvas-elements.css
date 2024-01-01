@@ -6,8 +6,7 @@ html, body {
 p {
     z-index: 50;
     margin: auto;
-    font-family: "Comic Sans MS", "Trebuchet MS", sans-serif;
-    position: absolute;
+    font-family: sans-serif;
     color: #00b300;
     display: block;
 }
@@ -17,7 +16,7 @@ header {
     text-align: center;
     z-index: 50;
     margin: auto;
-    font-family: "Comic Sans MS", "Trebuchet MS", sans-serif;
+    font-family: sans-serif;
     position: absolute;
     color: #00b300;
     display: block;
@@ -26,6 +25,21 @@ header {
 a {
     color: #008B8B;
     text-decoration: none;
+}
+
+.loading-card {
+    width: 80%;
+    height: 60%;
+    top: 20%;
+    left: 10%;
+    padding: 1.6rem;
+    margin: auto;
+    position: absolute;
+    background-color: #454545;
+    background-color: rgba(69,69,69, 0.86);
+    color: #ffffff;
+    text-align: center;
+    font-family: Verdana, "Segoe UI", serif;
 }
 
 #loading {
@@ -43,18 +57,121 @@ a {
     z-index: 10;
 }
 
-/* Information format (when clicked) */
-/*foreground {
+#home {
+    top: 88%;
+    left: 90%;
+    position: absolute;
+    color: #4f6694;
+    background-color: #454545;
+    padding: 1rem;
+    display: inline-block;
+    position: absolute;
+    width: 3%;
+    height: 5%;
+    text-align: center;
+    margin: auto;
+    border: 1px solid #4f6694;
+    border-radius: 14px;
+    font-family: Verdana, "Segoe UI", serif;
+    font-size: 2rem;
+    font-weight: 300;
+    z-index: 10;
+}
+
+#home:hover {
+    cursor: pointer;
+    color: aliceblue;
+    text-shadow: 1px 1px 3px #f3f2f2, -1px -1px 3px #f3f2f2;
+    box-shadow: 3px 3px 4px #7289b6, -3px 3px 4px #7289b6;
+}
+
+/* Information page (loaded when info button is clicked) */
+.foreground {
     color: #f3f2f2;
-    background-color: #6b6b6b;
-    / Transparent /
-    background-color: #6b6b6b7f;
+    display: none;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    position: fixed;
+    /* Transparent */
+    background-color:  rgba(107,107,107, 0.5);
     text-shadow: 2px 0 5px 	#adadad, -2px 0 5px #adadad;
-}*/
+    font-family: "Segoue UI", sans-serif;
+    z-index: 3;
+}
+
+.foreground h1 {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+/* Mostly due to indecision of which heading to choose. */
+.foreground h2, h3 {
+/*    font-size: 20px;*/
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.foreground p {
+    font-size: 1.5rem ;
+    position: inherit;
+    z-index: inherit;
+    color: inherit;
+}
+
+/* Text container within the intro/foreground page to allow separate scrolling section. 
+(Logically would make more sense to put this container format in a class attribute.) */
+#text-box {
+    width: 80%;
+    height: 72%;
+    max-height: 90%;
+    padding: 1rem 5rem;
+/*    border: 1px solid blue;*/
+    margin: auto;
+/*    overflow: auto;*/
+    overflow-y: hidden;
+/*    color: darkorange;*/
+    scrollbar-width: thin;
+    scrollbar-color: aliceblue none;
+    scrollbar-gutter: stable both-edges;
+}
+
+#text-box p {
+    font-family: inherit;
+    z-index: inherit;
+}
+
+#text-box:hover {
+    overflow-y: scroll;
+}
+
+.pamphlet {}
+
+/* General layout for closing button. */
+.off {
+    left: 90%;
+    width: 5%;
+    height: 5%;
+    text-align: center;
+    border-width: 1px;
+    padding: 1rem;
+    font-size: 20px;
+    font-family: monospace;
+    border-radius: 20px;
+    color: #f3f2f2;
+    position: absolute;
+    cursor: pointer;
+}
 
 canvas {
    width: 100%;
    height: 100%;
    display: block;
     background-color: #000;
+}
+
+@media screen and (max-width: 600px) {
+    /*#text-box {
+        overflow: hidden;
+    }*/
 }
