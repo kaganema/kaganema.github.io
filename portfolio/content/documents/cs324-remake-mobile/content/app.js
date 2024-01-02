@@ -66,7 +66,7 @@ setting.add(tools, 'ambience').onChange(function() {
     }
 });
 
-setting.add(tools, 'tone').onChange(function() {
+setting.add(tools, 'tone', -1.5, 2).onChange(function() {
     backdrop.intensity = tools.tone;
 });
 

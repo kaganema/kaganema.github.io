@@ -171,7 +171,15 @@ canvas {
 }
 
 @media screen and (max-width: 600px) {
-    /*#text-box {
+    #text-box {
         overflow: hidden;
-    }*/
+        padding: 1rem 2rem;
+        margin: 0.5rem 0;
+        max-height: 50%;
+    }
+    #text-box:hover {
+        overflow: auto;
+        scroll-behavior: auto;
+        scroll-width: none;
+    }
 }

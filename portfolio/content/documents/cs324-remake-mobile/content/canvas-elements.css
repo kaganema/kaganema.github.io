@@ -174,8 +174,8 @@ canvas {
     #text-box {
         overflow: hidden;
         padding: 1rem 2rem;
-        margin: 0.4rem 0;
-        max-height: 80%;
+        margin: 0.5rem 0;
+        max-height: 50%;
     }
     #text-box:hover {
         overflow: auto;
