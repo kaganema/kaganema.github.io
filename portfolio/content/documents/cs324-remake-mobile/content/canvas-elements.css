@@ -173,7 +173,8 @@ canvas {
 @media screen and (max-width: 600px) {
     #text-box {
         overflow: hidden;
-        padding: inherit 2rem;
+        padding: inherit 1rem;
+        max-height: 80%;
     }
     #text-box:hover {
         overflow: auto;
