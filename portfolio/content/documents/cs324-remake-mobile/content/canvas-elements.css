@@ -173,7 +173,7 @@ canvas {
 @media screen and (max-width: 600px) {
     #text-box {
         overflow: hidden;
-        padding: inherit 1rem;
+        padding: 1rem;
         margin: 0.4rem 0;
         max-height: 80%;
     }
