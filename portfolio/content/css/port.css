@@ -14,8 +14,12 @@ body{
   /**opacity: 90%;*/
 }
 
-header > h1, h2, h3 {
-	text-shadow: 1px 1px #cccccc;
+/* header > h1, h2, h3 {
+	text-shadow: 1px 1px 3px #cccccc;
+} */
+
+header h2, section h3 {
+	text-shadow: 1px 1px 6px #cccccc;
 }
 
 h1 {
@@ -56,11 +60,13 @@ a:hover {
 }
 
 ul{
-  list-style-type: circle;
+  /* list-style-type: circle; */
+  list-style-type: none;
   /*background: #a5a9ac;*/
   background: rgba(122, 124, 126, 0.4);
   backface-visibility: hidden;
   font-family: sans-serif;
+  /* text-align: justify; */
   color: #ffcc00;
 }
 
@@ -400,6 +406,10 @@ img{
 
 .ibox:hover .overlay {
   opacity: 1;
+}
+
+.ibox:hover {
+  box-shadow: 2px 2px 2px #ffffff, -2px -2px 2px #ffffff;
 }
 
 .skillset {
