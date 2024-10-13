@@ -348,6 +348,11 @@ header.card{
 	position: relative;
 }
 
+.ibox.title {
+	font-weight: bold;
+	font-size: 200;
+}
+
 .view {
 	display: inline-flex;
 	flex-wrap: wrap;
